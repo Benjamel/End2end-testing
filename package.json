@@ -1,0 +1,16 @@
+{
+  "name": "end2end-testing",
+  "version": "1.0.0",
+  "description": "end to end testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "eslint": "^8.36.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}
