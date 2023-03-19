@@ -4,7 +4,8 @@
   "description": "end to end testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test-e2e",
+    "test-e2e": "cypress open"
   },
   "author": "",
   "license": "ISC",
