@@ -1,7 +1,7 @@
-describe("no.wikipedia.org", () => {
-  it("can search for Noroff", () => {
-    cy.visit("https://no.wikipedia.org");
-    cy.get("input#searchInput").type("Noroff{enter}", { delay: 500 });
-    cy.get("h1").contains("Noroff");
-  });
+test("It resolves with 'abc' value after 1 second", async () => {
+  const start = Date.now();
+  const data = await wait(1000, "abc");
+  expect(data).toEqual("abc");
+  const end = Date.now();
+  expect(end - start).toBeGreaterThanOrEqual(1000);
 });
