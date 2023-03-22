@@ -1,6 +1,9 @@
-import apple from "./script";
+import { wait } from "./script";
 
-expect(apple.color).toEqual("red");
-expect(apple.texture).toEqual("juicy");
-expect(apple.rating).toBeGreaterThan(6);
-expect(apple.animalProduct).not.toBeTruthy();
+test("It resolves with 'abc' value after 1 second", async () => {
+  const start = Date.now();
+  const data = await wait(1000, "abc");
+  expect(data).toEqual("abc");
+  const end = Date.now();
+  expect(end - start).toBeGreaterThanOrEqual(1000);
+});
