@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
     "cypress": "^12.8.1",
     "eslint": "^8.36.0",
     "eslint-plugin-cypress": "^2.12.1",
