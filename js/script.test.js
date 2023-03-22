@@ -1,8 +1,16 @@
-import getExampleData from "./script";
+import apple from "./script";
 
-describe("getExampleData", () => {
-  it("returns the correct maximum of items", async () => {
-    const data = await getExampleData(3);
-    expect(data.length).toBeLessThanOrEqual(3);
+describe("My apple", () => {
+  it("is red and juicy", () => {
+    expect(apple.color).toEqual("red");
+    expect(apple.texture).toEqual("juicy");
+  });
+
+  it("is delicious", () => {
+    expect(apple.rating).toBeGreaterThan(6);
+  });
+
+  it("is vegan friendly", () => {
+    expect(apple.animalProduct).not.toBeTruthy();
   });
 });
