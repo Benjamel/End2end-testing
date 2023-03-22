@@ -1,16 +1,6 @@
 import apple from "./script";
 
-describe("My apple", () => {
-  it("is red and juicy", () => {
-    expect(apple.color).toEqual("red");
-    expect(apple.texture).toEqual("juicy");
-  });
-
-  it("is delicious", () => {
-    expect(apple.rating).toBeGreaterThan(6);
-  });
-
-  it("is vegan friendly", () => {
-    expect(apple.animalProduct).not.toBeTruthy();
-  });
-});
+expect(apple.color).toEqual("red");
+expect(apple.texture).toEqual("juicy");
+expect(apple.rating).toBeGreaterThan(6);
+expect(apple.animalProduct).not.toBeTruthy();
