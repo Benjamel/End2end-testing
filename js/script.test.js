@@ -1,9 +1,8 @@
-import { wait } from "./script";
+import getExampleData from "./script";
 
-test("It resolves with 'abc' value after 1 second", async () => {
-  const start = Date.now();
-  const data = await wait(1000, "abc");
-  expect(data).toEqual("abc");
-  const end = Date.now();
-  expect(end - start).toBeGreaterThanOrEqual(1000);
+describe("getExampleData", () => {
+  it("returns the correct maximum of items", async () => {
+    const data = await getExampleData(3);
+    expect(data.length).toBeLessThanOrEqual(3);
+  });
 });
